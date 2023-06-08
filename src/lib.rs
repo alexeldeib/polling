@@ -216,7 +216,7 @@ impl Event {
 /// Waits for I/O events.
 pub struct Poller {
     poller: sys::Poller,
-    events: Mutex<sys::Events>,
+    pub events: Mutex<sys::Events>,
     notified: AtomicBool,
 }
 
